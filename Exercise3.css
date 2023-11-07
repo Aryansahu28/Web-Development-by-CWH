@@ -1,0 +1,35 @@
+            body {
+                margin: 20px;
+                padding: 10px;
+                /* background-color: green; */
+            }
+            
+            .box {
+                background-color: rgb(200, 255, 0);
+                padding: 10px;
+                box-sizing: border-box;
+                border: 2px solid black;
+                border-radius: 2px;
+                height: 80vh;
+                width: 30vw;
+                position: relative;
+                left: 345px;
+            }
+            
+            .nav1 {
+                display: inline;
+                box-sizing: border-box;
+                border: 2px solid rgb(72, 0, 255);
+                border-radius: 20px;
+                text-align: 2px;
+            }
+            
+            img {
+                box-sizing: border-box;
+                border: 2px solid rgb(60, 0, 255);
+                /* padding: 9px; */
+                border-radius: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
