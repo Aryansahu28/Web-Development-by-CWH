@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 4</title>
     <style>
-        .root {
-            --webkit-filter: contrast(30%);
+         :root {
+            --webkit-filter: contrast(600%);
+            --color: rgb(219, 12, 219);
+            --seccolor: black;
+        }
+        
+        .nothing {
+            background-color: var(--color);
+            -webkit-filter: var(--webkit-filter);
+            color: var(--seccolor)
+        }
+        
+        .coming {
+            background-color: var(--seccolor);
+            color: aliceblue;
+            -webkit-filter: var(--webkit-filter);
         }
     </style>
 </head>
 
 <body>
+    <div class="nothing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ipsa sed numquam cupiditate natus corrupti. Consequuntur, debitis laborum! Aspernatur eum possimus quibusdam laudantium?</div>
 
+    <div class="coming">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, dicta eos voluptate tempore, expedita dolor corporis facilis quas id velit perferendis unde eius. Aspernatur iusto dolore fuga voluptates, minima nam debitis omnis blanditiis?</div>
 </body>
 
 </html>
