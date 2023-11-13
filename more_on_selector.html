@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector</title>
+    <style>
+         ::selection {
+            background-color: black;
+            color: aqua;
+        }
+        
+        .box1 {
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+        
+        .box2 {
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+        /* .box3 {
+            box-sizing: border-box;
+            border: 2px solid black;
+        } */
+        
+        [data-color="something"] {
+            color: rgb(142, 142, 209);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box1">I am working</div>
+        <div class="box2">I am learning</div>
+        <div data-color="something" class="box3">I am studying</div>
+    </div>
+
+</body>
+
+</html>
