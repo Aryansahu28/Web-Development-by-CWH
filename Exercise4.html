@@ -7,30 +7,55 @@
     <title>Exercise 4</title>
     <style>
          :root {
-            --webkit-filter: contrast(600%);
-            --color: rgb(219, 12, 219);
-            --seccolor: black;
+            --primarycolor: rgb(249, 149, 18);
+            --textcolor: white;
+            --seccolor: rgb(247, 183, 114);
         }
         
-        .nothing {
-            background-color: var(--color);
-            -webkit-filter: var(--webkit-filter);
-            color: var(--seccolor)
-        }
-        
-        .coming {
+        body {
             background-color: var(--seccolor);
-            color: aliceblue;
-            -webkit-filter: var(--webkit-filter);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            background-color: var(--primarycolor);
+            padding: 12px 0px;
+        }
+        
+        ul li {
+            list-style: none;
+            color: var(--textcolor);
+            display: inline;
+            padding: 23px;
+        }
+        
+        ul li a {
+            color: var(--textcolor);
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="nothing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ipsa sed numquam cupiditate natus corrupti. Consequuntur, debitis laborum! Aspernatur eum possimus quibusdam laudantium?</div>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a></li>
+                <li>
+                    <a href=" /">Contact</a></li>
+                <li>
+                    <a href="/">Service</a></li>
+                <li>
+                    <a href=" /">About us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="coming">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, dicta eos voluptate tempore, expedita dolor corporis facilis quas id velit perferendis unde eius. Aspernatur iusto dolore fuga voluptates, minima nam debitis omnis blanditiis?</div>
-    <div class="slc">Lorem ipsum::view-transition</div>
 </body>
 
 </html>
