@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms and Input</title>
+    <title>Form - Learning by me </title>
 </head>
 
 <body>
-    <form action="post">
-        <div>
-            <input type="password" name="password" placeholder="Enter the password">
-        </div>
-        <div>
+    <form action="/submit" method="post">
+        <!-- Label for text -->
+        <lable for="username">Username:</lable>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <!-- Label for Password -->
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password">
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label>
 
-            <input type="text" name="username" placeholder="Enter the name">
-        </div>
-        <div>
-            <input type="radio" id="male" name="gender" value="male">
-            <label id="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label id="female">Female</label>
-        </div>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label>
     </form>
 </body>
 
